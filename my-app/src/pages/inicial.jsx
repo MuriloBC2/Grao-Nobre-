@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import cafe_inicio from "../assets/cafe_inicio.png";
 import arte_fundo_inicial from "../assets/arte_fundo_inicio.png";
 import Navbar from "../components/navbar.jsx";
+import Login from "../components/login.jsx";
 
 const Inicial = () => {
   return (
@@ -20,8 +21,11 @@ const Inicial = () => {
    <div className="ml-10  mb-20">
       <img src={cafe_inicio} alt="Logo" className="h-[572px] w-[570px]"/>
    </div>
+
     
    </div>
+
+   <Login/>
 
 </>
   )

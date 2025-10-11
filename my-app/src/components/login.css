@@ -1,0 +1,76 @@
+.Loginda{
+    width: 673px;
+    height: 600px;
+    background-color: #E7DAD1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+.TituloLogin {
+
+font-size: 32px;
+color: #A67B5B;
+
+
+}
+
+.inlogin {
+
+ border: 1px solid brown;
+ height: 45px; 
+ width: 398px;
+ border-radius: 8px;
+ margin: 5px;
+ font-size: 20px;
+ color: #9b5c42;
+ padding: 5px;
+
+
+}
+.Areabotao{
+
+display: flex;
+flex-direction: row;
+margin-top: 60px;
+
+}
+#botaovoltar {
+
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #9b5c42;
+width: 193px;
+height: 45px;
+border-radius: 8px;
+font-size: 20px;
+color: #9b5c42;
+margin-right: 14px;
+
+
+}
+
+#botaocadastro{
+
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid white;
+width: 193px;
+height: 45px;
+border-radius: 8px;
+font-size: 20px;
+color: white;
+margin-right: 16px;
+background-color: #9b5c42;
+
+
+
+}
+
+
+
