@@ -1,5 +1,4 @@
 import React from "react";  
-import logo from "../assets/logo.png";
 import cafe_inicio from "../assets/cafe_inicio.png";
 import arte_fundo_inicial from "../assets/arte_fundo_inicio.png";
 import arte_inicial_2 from "../assets/image-inic-2.jpg";
@@ -7,6 +6,7 @@ import cel_inicio from "../assets/cel-inic.png";
 import chef_inicio from "../assets/chef-inic.png";
 import carri_inicio from "../assets/carri-inic.png";
 import Navbar from "../components/navbar.jsx";
+import Menu from "../components/menu.jsx";
 
 const Inicial = () => {
   return (
@@ -43,8 +43,9 @@ const Inicial = () => {
          <p className="text-center bg-[#9B5C42] font-[jost] text-[30px] text-white w-[263px] h-[172px] rounded-3xl  pt-9">Levamos os pedidos fresquinhos até você</p>
       </div>
     </div>
-
    </div>
+
+   <Menu/>
 
 </>
   )
