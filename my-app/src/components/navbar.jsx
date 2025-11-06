@@ -12,7 +12,6 @@ const Navbar = () => {
         <div className="flex flex-row gap-15 mr-40 text-[20px] font-[jost] font-bold text-[#6F4F28]  ">
            <button>Inicio</button>
            <button>Menu</button>
-           <button>Sobre Nós</button>
            <button>Locais</button>
            <button>Contato</button>
            <a href="">Login</a>
