@@ -7,6 +7,8 @@ import chef_inicio from "../assets/chef-inic.png";
 import carri_inicio from "../assets/carri-inic.png";
 import Navbar from "../components/navbar.jsx";
 import Menu from "../components/menu.jsx";
+import foto_mao_cafe from "../assets/foto-mao_cafe.png";
+import Footer from "../components/footer.jsx";
 
 const Inicial = () => {
   return (
@@ -44,8 +46,18 @@ const Inicial = () => {
       </div>
     </div>
    </div>
+    <Menu/>
+   <div className="h-screen w-screen flex  flex-row  items-center">
+   <img src={foto_mao_cafe} className="w-[570px] h-[570px] rotate-90 mr-5"/>
+   <div className="flex flex-col ">
+      <h1 className="font-[imbue] text-[64px] text-[#6F4F28]">Pronto para transformar suas manhãs ? </h1>
+      <p className=" w-[550px] font-[krub] text-[40px] text-[#A67B5B]">Cadastre-se agora e ganhe 10% off no seu primeiro pedido!</p>
+      <button className="mt-8 w-[311px] h-[67px] bg-[#6F4F28] text-white text-[28px]">Quero meu desconto!</button>
+   </div>
+   </div>
 
-   <Menu/>
+   <Footer/>
+  
 
 </>
   )
