@@ -20,17 +20,46 @@ color: #A67B5B;
 
 .inlogin {
 
- border: 1px solid brown;
- height: 45px; 
- width: 398px;
- border-radius: 8px;
- margin: 5px;
- font-size: 20px;
- color: #9b5c42;
- padding: 5px;
-
-
+  border: 1px solid brown;
+  height: 45px;
+  width: 398px; 
+  border-radius: 8px;
+  margin: 5px;
+  font-size: 20px;
+  color: #9b5c42;
+  
+ 
+  padding: 5px; 
+  padding-left: 45px; 
+  
+  box-sizing: border-box; 
 }
+
+.input-group {
+  position: relative; 
+ 
+  width: 398px; 
+  height: 45px;
+  margin: 5px auto; 
+}
+
+.input-group .icon-input,
+.input-group .icon-password {
+  position: absolute;
+  top: 50%; 
+  left: 15px; 
+  transform: translateY(-50%); 
+  color: #9b5c42; 
+  z-index: 10; 
+}
+
+
+
+
+
+
+
+
 .Areabotao{
 
 display: flex;
@@ -71,6 +100,8 @@ background-color: #9b5c42;
 
 
 }
+
+
 
 
 
