@@ -8,7 +8,9 @@ import carri_inicio from "../assets/carri-inic.png";
 import Navbar from "../components/navbar.jsx";
 import Menu from "../components/menu.jsx";
 import foto_mao_cafe from "../assets/foto-mao_cafe.png";
+import google_maps from "../assets/google_maps.png";
 import Footer from "../components/footer.jsx";
+
 
 const Inicial = () => {
   return (
@@ -54,6 +56,13 @@ const Inicial = () => {
       <p className=" w-[550px] font-[krub] text-[40px] text-[#A67B5B]">Cadastre-se agora e ganhe 10% off no seu primeiro pedido!</p>
       <button className="mt-8 w-[311px] h-[67px] bg-[#6F4F28] text-white text-[28px]">Quero meu desconto!</button>
    </div>
+   </div>
+   <div className="h-screen w-screen flex items-center justify-center bg-[#EBCFAF]">
+      <div className="border border-[#6F4F28] w-[1178px] h-[671px] bg-[#E7DAD1] rounded-4xl flex flex-col  items-center space-y-10">
+         <h1 className="text-[#6F4F28] text-[64px] font-[Imbue]">Nosso Cantinho no Mundo</h1>
+         <img src={google_maps} alt="" className="rounded-4xl"/>
+
+      </div>
    </div>
 
    <Footer/>
