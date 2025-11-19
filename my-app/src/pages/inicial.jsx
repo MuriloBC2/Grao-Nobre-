@@ -6,10 +6,11 @@ import cel_inicio from "../assets/cel-inic.png";
 import chef_inicio from "../assets/chef-inic.png";
 import carri_inicio from "../assets/carri-inic.png";
 import Navbar from "../components/navbar.jsx";
-import Menu from "../components/menu.jsx";
+import Menu from "../components/menuSample.jsx";
 import foto_mao_cafe from "../assets/foto-mao_cafe.png";
 import google_maps from "../assets/google_maps.png";
 import Footer from "../components/footer.jsx";
+import MenuSample from "../components/menuSample.jsx";
 
 
 const Inicial = () => {
@@ -48,8 +49,8 @@ const Inicial = () => {
       </div>
     </div>
    </div>
-    <Menu/>
-   <div className="h-screen w-screen flex  flex-row  items-center">
+    <MenuSample/>
+   <div className="h-screen w-screen flex  flex-row  items-center bg-[#EBCFAF]">
    <img src={foto_mao_cafe} className="w-[570px] h-[570px] rotate-90 mr-5"/>
    <div className="flex flex-col ">
       <h1 className="font-[imbue] text-[64px] text-[#6F4F28]">Pronto para transformar suas manhãs ? </h1>
@@ -66,9 +67,13 @@ const Inicial = () => {
    </div>
 
    <Footer/>
-  
 
 </>
   )
 }
  export default Inicial;
+
+
+
+
+ 
