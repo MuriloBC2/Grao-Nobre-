@@ -27,13 +27,34 @@ return (
   <input className="inlogin" type="password" placeholder="Crie a senha"/>
   </div>
 
-<div className="input-group">
+  <div className="input-group">
   <CiLock size={20} className="icon-password" />
   <input className="inlogin" type="password" placeholder="Confirme sua senha"/>
+  
+
+    <div class="tem-cadastro">
+    Já tem cadastro? <span class="info-icon">ⓘ</span>
+    </div>
+
 
     </div>
 
+    <div className="Cadastrar">
+    <button class="Cadastrar">
+    Cadastrar
+    </button>
+   
+    </div>
+
+   
+
+
+
+
     
+
+
+
 
 
 
