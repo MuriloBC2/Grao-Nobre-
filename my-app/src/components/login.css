@@ -109,4 +109,26 @@ margin-right: 14px;
     
 }
 
+.fundomarrom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #654321;
+  z-index: -1;
+  height: 100vh;
+  background-color: #664730;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+        
 
+.logo-login {
+    max-width: 80%;
+    height: auto;
+    position: relative;
+    top: -50px;
+    right: -50px;
+}
