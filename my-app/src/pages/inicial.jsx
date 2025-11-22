@@ -6,7 +6,12 @@ import cel_inicio from "../assets/cel-inic.png";
 import chef_inicio from "../assets/chef-inic.png";
 import carri_inicio from "../assets/carri-inic.png";
 import Navbar from "../components/navbar.jsx";
-import Menu from "../components/menu.jsx";
+import Menu from "../components/menuSample.jsx";
+import foto_mao_cafe from "../assets/foto-mao_cafe.png";
+import google_maps from "../assets/google_maps.png";
+import Footer from "../components/footer.jsx";
+import MenuSample from "../components/menuSample.jsx";
+
 
 const Inicial = () => {
   return (
@@ -44,10 +49,31 @@ const Inicial = () => {
       </div>
     </div>
    </div>
+    <MenuSample/>
+   <div className="h-screen w-screen flex  flex-row  items-center bg-[#EBCFAF]">
+   <img src={foto_mao_cafe} className="w-[570px] h-[570px] rotate-90 mr-5"/>
+   <div className="flex flex-col ">
+      <h1 className="font-[imbue] text-[64px] text-[#6F4F28]">Pronto para transformar suas manhãs ? </h1>
+      <p className=" w-[550px] font-[krub] text-[40px] text-[#A67B5B]">Cadastre-se agora e ganhe 10% off no seu primeiro pedido!</p>
+      <button className="mt-8 w-[311px] h-[67px] bg-[#6F4F28] text-white text-[28px]">Quero meu desconto!</button>
+   </div>
+   </div>
+   <div className="h-screen w-screen flex items-center justify-center bg-[#EBCFAF]">
+      <div className="border border-[#6F4F28] w-[1178px] h-[671px] bg-[#E7DAD1] rounded-4xl flex flex-col  items-center space-y-10">
+         <h1 className="text-[#6F4F28] text-[64px] font-[Imbue]">Nosso Cantinho no Mundo</h1>
+         <img src={google_maps} alt="" className="rounded-4xl"/>
 
-   <Menu/>
+      </div>
+   </div>
+
+   <Footer/>
 
 </>
   )
 }
  export default Inicial;
+
+
+
+
+ 
