@@ -7,6 +7,6 @@ import Menu from './pages/menu.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Menu />
+    <Inicial />
   </StrictMode>,
 )
