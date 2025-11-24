@@ -12,6 +12,7 @@ import doce_chocolate from "../assets/items/doce_de_chocolate.png"
 import bolo from "../assets/items/bolo.png"
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import axios from "axios";
 
 const Menu = () => {
   return (
