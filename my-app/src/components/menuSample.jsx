@@ -1,19 +1,20 @@
 import React from "react";
 import fundo_menu from "../assets/fundo_menu.png"
-import cafe from "../assets/cafe.png"
-import croassan from "../assets/croassan.png"
-import pao_de_queijo from "../assets/pao_de_queijo.png"
-import torta_de_morango from "../assets/torta_de_morango.png"
+import cafe from "../assets/items/cafe.png"
+import croassan from "../assets/items/croassan.png"
+import pao_de_queijo from "../assets/items/pao_de_queijo.png"
+import torta_de_morango from "../assets/items/torta_de_morango.png"
 
 
-const Menu = () => {
 
+const MenuSample = () => {
+ 
 
     return(
         <>
-        <div  className="h-screen w-screen  flex justify-center items-center flex-col">
-            <img src={fundo_menu} alt="Fundo" className="absolute  w-screen h-screen opacity-30 object-cover -z-40 "/>
-            <p className="text-[64px] text-[#6F4F28] font-[imbue] mt-10">Menu</p>
+        <div  className="h-[854px] w-screen  flex justify-center items-center flex-col">
+            <img src={fundo_menu} alt="Fundo" className="absolute  w-screen h-[854px] opacity-30 object-cover -z-40 "/>
+            <p className="text-[64px] text-[#6F4F28] font-[imbue]">Menu</p>
             <p className="text-[30px] text-[#6F4F28] font-[imbue] mt-5 mb-10">Nossas delícias feitas com amor e tradição</p>
 
             <div className="flex flex-row justify-center items-center gap-4">
@@ -23,7 +24,7 @@ const Menu = () => {
                 </div>
                     <div className="w-[255px] h-[119px] bg-[#A67B5B] text-center">
                         <p className="mt-5 text-[40px] font-[abel] text-white">Cafés</p>
-                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#B18959]">Pedir</button>
+                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#6F4F28] text-white text-[24px] rounded-2xl">Pedir</button>
                     </div>
                 </div>
                  <div className="flex flex-col  "> 
@@ -32,7 +33,7 @@ const Menu = () => {
                 </div>
                     <div className="w-[255px] h-[119px] bg-[#A67B5B] text-center">
                         <p className="mt-5 text-[40px] font-[abel] text-white">Croissant</p>
-                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#B18959]">Pedir</button>
+                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#6F4F28] text-white text-[24px] rounded-2xl">Pedir</button>
                     </div>
                 </div>
                  <div className="flex flex-col  "> 
@@ -41,7 +42,7 @@ const Menu = () => {
                 </div>
                     <div className="w-[255px] h-[119px] bg-[#A67B5B] text-center">
                         <p className="mt-5 text-[40px] font-[abel] text-white">Pão de queijo</p>
-                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#B18959]">Pedir</button>
+                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#6F4F28] text-white text-[24px] rounded-2xl">Pedir</button>
                     </div>
                 </div>
                  <div className="flex flex-col "> 
@@ -50,15 +51,15 @@ const Menu = () => {
                 </div>
                     <div className="w-[255px] h-[119px] bg-[#A67B5B] text-center">
                         <p className="mt-5 text-[40px] font-[abel] text-white">Tortas</p>
-                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#B18959]">Pedir</button>
+                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#6F4F28] text-white text-[24px] rounded-2xl">Pedir</button>
                     </div>
                 </div>
             </div>
 
-            <button className=" mt-20 w-[311px] h-[64px] bg-[#A67B5B] text-white text-[30px]">Menu Completo</button>
+            <button className=" mt-20 w-[311px] h-[64px] bg-[#6F4F28] text-white text-[30px] rounded-2xl">Menu Completo</button>
         </div>
         </>
     )
 }
 
-export default Menu
+export default MenuSample
