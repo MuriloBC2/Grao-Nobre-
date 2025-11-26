@@ -5,8 +5,12 @@ import { useState, useEffect, use } from 'react';
 import { SlTrash } from "react-icons/sl";
 import { IoMdArrowBack } from "react-icons/io";
 import Resumo from '../components/resumo.jsx';
+import { useNavigate } from 'react-router-dom';
 
 const Cesto = () => {
+      
+    const navigate = useNavigate();
+
 
     const [produtos, setProdutos] = useState([]);
     const [carrinho, setCarrinho] = useState([]);
@@ -73,7 +77,7 @@ const Cesto = () => {
         
         <Navbar/>
         <div className='w-screen h-screen bg-[#E3D5CB] '>
-            <h1>Seu Cesto</h1>
+            <h1 className='text-[40px] font-[] ml-10 mt-2 text-[#6F4F28]'>Seu Cesto</h1>
             <div className='flex'>
                 <div className='m-10 bg-[#E2E2E2] shadow-lg p=6 border border-[#6F4F28] rounded-2xl w-[65%] pb-10'>
                     <div className=' bg-[#A67B5B] rounded-t-lg p-2 text-white border border-[#6F4F28] '>
@@ -81,7 +85,7 @@ const Cesto = () => {
                             <p>Produtos</p>
                             <p>Preço</p>
                             <p>Quantidade</p>
-                            <p>Total</p>
+                            <p>Total</p> 
                         </nav>
                     </div>
                     {carrinho.map(produto => (
@@ -113,7 +117,7 @@ const Cesto = () => {
                 < Resumo carrinho={carrinho} />
             </div>
 
-            <button onClick={handleNavigateToMenu} className='flex items-center border'><IoMdArrowBack />Continuar comprando</button>
+            <button onClick={handleNavigateToMenu} className='flex items-center ml-10'><IoMdArrowBack />Continuar comprando</button>
         </div>
         <Footer/>
 
