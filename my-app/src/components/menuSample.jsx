@@ -3,6 +3,7 @@ import fundo_menu from "../assets/fundo_menu.png"
 import croassan from "../assets/items/croassan.png"
 import pao_de_queijo from "../assets/items/pao_de_queijo.png"
 import torta_de_morango from "../assets/items/torta_de_morango.png"
+import cafe from "../assets/items/doce.png"
 
 
 
