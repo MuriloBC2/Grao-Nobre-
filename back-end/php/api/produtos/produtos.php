@@ -29,5 +29,39 @@ if ($api == "produtos") {
                 echo json_encode(array("Erro" => "Ação não encontrada"));
             }
         }
+
+        if ($method == "POST") {
+            if ($acao == "adicionar") {
+                $data = json_decode(file_get_contents("php://input"));
+
+                if (isset($data->nome) && isset($data->preco) && isset($data->descricao) && isset($data->imagem) && isset($data->categoria)) {
+                    $nome = $data->nome;
+                    $preco = $data->preco;
+                    $descricao = $data->descricao;
+                    $imagem = $data->imagem;
+                    $categoria = $data->categoria;
+                    
+
+                    $rs = $pdo->prepare("INSERT INTO produto (nome, preco, descricao, imagem, categoria) VALUES (:nome, :preco, :descricao, :imagem, :categoria)");
+                    $result = $rs->execute(array(
+                        ':nome' => $nome,
+                        ':preco' => $preco,
+                        ':descricao' => $descricao,
+                        ':imagem' => $imagem,
+                        ':categoria' => $categoria
+                    ));
+
+                    if ($result) {
+                        echo json_encode(array("Sucesso" => "Produto adicionado com sucesso"));
+                    } else {
+                        echo json_encode(array("Erro" => "Falha ao adicionar produto"));
+                    }
+                } else {
+                    echo json_encode(array("Erro" => "Dados incompletos"));
+                }
+            } else {
+                echo json_encode(array("Erro" => "Ação não encontrada"));
+            }
+        }
         
     }
