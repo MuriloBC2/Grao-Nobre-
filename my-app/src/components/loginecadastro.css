@@ -1,0 +1,263 @@
+.Loginda{
+    width: 673px;
+    height: 100vh;
+    background-color: #E7DAD1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    
+    
+}
+    
+    
+.espacologin{
+
+  width: 673px;
+    height: 100vh;
+    background-color: #E7DAD1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.TituloLogin {
+
+font-size: 32px;
+color: #A67B5B;
+width: 385px;
+height: 50px;
+
+}
+
+.inlogin {
+
+  border: 1px solid brown;
+  height: 45px;
+  width: 398px; 
+  border-radius: 8px;
+  margin: 5px;
+  font-size: 20px;
+  color: #9b5c42;
+  background-color:#E2E2E2;
+ 
+  padding: 5px; 
+  padding-left: 45px; 
+  
+  box-sizing: border-box; 
+}
+
+.input-group {
+  position: relative; 
+ 
+  width: 398px; 
+  height: 45px;
+  margin: 5px auto; 
+}
+
+.input-group .icon-input,
+.input-group .icon-password {
+  position: absolute;
+  top: 60%; 
+  left: 15px; 
+  transform: translateY(-50%); 
+  color: #6F4F28; 
+  z-index: 10; 
+}
+
+
+.Areabotao{
+
+display: flex;
+flex-direction: row;
+margin-top: 60px;
+
+}
+
+#botaovoltar {
+
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #9b5c42;
+width: 193px;
+height: 45px;
+border-radius: 8px;
+font-size: 20px;
+color: #9b5c42;
+margin-right: 14px;
+
+
+}
+
+
+.tem-cadastro {
+
+ color: #9B5C42; 
+ font-size: 16px;
+ font-weight: 400;
+ margin: 3px;
+ margin-top: px;
+ width: 200px;
+
+
+}
+
+
+.Cadastrar {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 398px;
+    height: 50px;
+    margin: 55px;
+    margin-right: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #9B5C42;
+    color: #FFFFFF;
+  
+    
+}
+
+.fundomarrom {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #654321;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+
+  
+
+}
+        
+
+.imagemfundo {
+width: 800px;
+height: 600px;
+
+
+
+
+}
+
+.divtotalcadastro {
+
+display: flex;
+flex-direction: row;
+
+
+}
+
+
+.imagemfundoLog {
+  
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    border: 2px solid #8b5a2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 5px;
+
+}
+
+.titulologin {
+
+  position: relative;
+  width: 400px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #8c5b3b;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 20px;
+
+}
+
+
+.escrita {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+label {
+  display: block;
+  text-align: left;
+  width: 400px;
+  margin: 15px auto 1px auto;
+  font-family: 'Arial', sans-serif;
+  font-weight: 500;
+  color: #8C5B3B;
+  font-size: 22px;
+}
+
+
+.loginbotao {
+
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 398px;
+    height: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #9B5C42;
+    color: #FFFFFF;
+    margin-top: 15px;
+
+}
+
+.loginbotao2 {
+
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 398px;
+    height: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #E2E2E2 ;
+    border: #9B5C42 2px solid
+;
+    color: #9B5C42;
+    margin-top: 15px;
+
+}
