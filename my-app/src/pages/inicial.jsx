@@ -18,6 +18,9 @@ const Inicial = () => {
    const handleNavigateTologin = () => {
       navigate('/login');
    }
+     const handleNavigateToCesto= () => {
+      navigate('/cesto');
+   }
 
   return (
  <>
@@ -28,7 +31,7 @@ const Inicial = () => {
           <h1 className="text-[60px] ">O pão que você ama, agora <span className="text-[#6F4F28]">entregue em minutos</span></h1>
           <p className="text-[24px]">Com o <span className="text-[#6F4F28]">Minha Sacola</span>, você seleciona seus pães, cafés e doces favoritos e nosso motoqueiro leva o sabor até você em minutos</p>
           <div className=" mt-20 space-x-5">
-             <button className="w-[255px] h-[64px]  bg-[#9B5C42] text-white text-[24px]">Minha Sacola</button>
+             <button className="w-[255px] h-[64px]  bg-[#9B5C42] text-white text-[24px]" onClick={handleNavigateToCesto}>Minha Sacola</button>
              <button className="w-[255px] h-[64px]  bg-[#C0977D] text-white text-[24px]">Como Funciona ?</button>
           </div>
       </div>
@@ -75,7 +78,6 @@ const Inicial = () => {
             style={{ border: 0, pointerEvents: 'none' }}
             src="https://maps.google.com/maps?q=Avenida+Sapopemba+6094&output=embed&z=15&controls=0" 
             allowFullScreen={false}
-            loading="lazy"
             className="rounded-[107px]"
          >
          </iframe>

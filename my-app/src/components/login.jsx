@@ -23,14 +23,14 @@ return (
       </p>
 
     
-    <label htmlFor="">login</label>
+    <label htmlFor="">Login</label>
      <div className="input-group">
     <CiUser size={20} className="icon-input" />
     <input className="inlogin" type="text" placeholder="Email ou Telefone..." />
     </div>
     
 
-    <label htmlFor="">senha</label>
+    <label htmlFor="">Senha</label>
     <div className="input-group">
     <CiLock size={20} className="icon-password" />
     <input className="inlogin" type="password" placeholder="Crie a senha"/>

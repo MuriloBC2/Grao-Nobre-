@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import { useNavigate } from "react-router-dom";
+import Sacola from "../assets/sacola.png"
 
 
 const Navbar = () => {
@@ -28,6 +29,7 @@ const Navbar = () => {
            <button>Locais</button>
            <button>Contato</button>
            <button onClick={handleNavigateTologin}>Login</button>
+           <img src={Sacola} alt=""/>
         </div>
     </div>
     </>
