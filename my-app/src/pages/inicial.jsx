@@ -22,6 +22,10 @@ const Inicial = () => {
       navigate('/cesto');
    }
 
+   const handleNavigateToCesto = () => {
+      navigate('/cesto');
+   }
+
   return (
  <>
     <Navbar/>
