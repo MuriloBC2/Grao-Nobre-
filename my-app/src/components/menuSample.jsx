@@ -29,7 +29,7 @@ const MenuSample = () => {
                 </div>
                     <div className="w-[255px] h-[119px] bg-[#A67B5B] text-center">
                         <p className="mt-5 text-[40px] font-[abel] text-white">Cafés</p>
-                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#6F4F28] text-white text-[24px] rounded-2xl">Pedir</button>
+                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#6F4F28] text-white text-[24px] rounded-2xl" onClick={handleNavigateToMenu}>Pedir</button>
                     </div>
                 </div>
                  <div className="flex flex-col  "> 
@@ -38,7 +38,7 @@ const MenuSample = () => {
                 </div>
                     <div className="w-[255px] h-[119px] bg-[#A67B5B] text-center">
                         <p className="mt-5 text-[40px] font-[abel] text-white">Croissant</p>
-                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#6F4F28] text-white text-[24px] rounded-2xl">Pedir</button>
+                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#6F4F28] text-white text-[24px] rounded-2xl" onClick={handleNavigateToMenu}>Pedir</button>
                     </div>
                 </div>
                  <div className="flex flex-col  "> 
@@ -47,7 +47,7 @@ const MenuSample = () => {
                 </div>
                     <div className="w-[255px] h-[119px] bg-[#A67B5B] text-center">
                         <p className="mt-5 text-[40px] font-[abel] text-white">Pão de queijo</p>
-                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#6F4F28] text-white text-[24px] rounded-2xl">Pedir</button>
+                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#6F4F28] text-white text-[24px] rounded-2xl" onClick={handleNavigateToMenu}>Pedir</button>
                     </div>
                 </div>
                  <div className="flex flex-col "> 
@@ -56,7 +56,7 @@ const MenuSample = () => {
                 </div>
                     <div className="w-[255px] h-[119px] bg-[#A67B5B] text-center">
                         <p className="mt-5 text-[40px] font-[abel] text-white">Tortas</p>
-                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#6F4F28] text-white text-[24px] rounded-2xl">Pedir</button>
+                        <button className="w-[135px] h-[58px] border-2 border-[#6F4F28] bg-[#6F4F28] text-white text-[24px] rounded-2xl" onClick={handleNavigateToMenu}>Pedir</button>
                     </div>
                 </div>
             </div>

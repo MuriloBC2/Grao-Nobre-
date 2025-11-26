@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Sacola from "../assets/sacola.png"
 
 
-const Navbar = () => {
+const Navbar = ({ onEndClick }) => {
        const navigate = useNavigate();
 
    const handleNavigateToMenu = () => {
@@ -17,6 +17,15 @@ const Navbar = () => {
       navigate('/');
    }
 
+    const handleNavigateToCesto= () => {
+      navigate('/cesto');
+   }
+
+   const handClickEnd = () => {
+      if (typeof onEndClick === 'function') onEndClick();
+      else console.warn('Navbar: onEndClick not provided')
+   }
+
     return (
     <>
     <div className="bg-[#E7DAD1] w-screen h-20 flex flex-row items-center justify-between">
@@ -26,10 +35,9 @@ const Navbar = () => {
         <div className="flex flex-row gap-15 mr-40 text-[20px] font-[jost] font-bold text-[#6F4F28]  ">
            <button onClick={handleNavigateToInicio}>Inicio</button>
            <button onClick={handleNavigateToMenu}>Menu</button>
-           <button>Locais</button>
-           <button>Contato</button>
+           <button onClick={handClickEnd}>Endereço</button>
            <button onClick={handleNavigateTologin}>Login</button>
-           <img src={Sacola} alt=""/>
+           <img src={Sacola} onClick={handleNavigateToCesto} alt=""/>
         </div>
     </div>
     </>
