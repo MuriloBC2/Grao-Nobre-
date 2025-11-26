@@ -3,12 +3,22 @@ import fundo_menu from "../assets/fundo_menu.png"
 import croassan from "../assets/items/croassan.png"
 import pao_de_queijo from "../assets/items/pao_de_queijo.png"
 import torta_de_morango from "../assets/items/torta_de_morango.png"
+<<<<<<< HEAD
 import cafe from "../assets/items/doce.png"
 
+=======
+import cafe from "../assets/items/cafe.png"
+import { useNavigate } from "react-router-dom";
+>>>>>>> 467de19bc9671020b900ccfa63c295e936a9d151
 
 
 const MenuSample = () => {
- 
+    
+     const navigate = useNavigate();
+
+   const handleNavigateToMenu = () => {
+      navigate('/menu');
+   }
 
     return(
         <>
@@ -56,7 +66,7 @@ const MenuSample = () => {
                 </div>
             </div>
 
-            <button className=" mt-20 w-[311px] h-[64px] bg-[#6F4F28] text-white text-[30px] rounded-2xl">Menu Completo</button>
+            <button onClick={handleNavigateToMenu}  className=" mt-20 w-[311px] h-[64px] bg-[#6F4F28] text-white text-[30px] rounded-2xl">Menu Completo</button>
         </div>
         </>
     )
