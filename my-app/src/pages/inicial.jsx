@@ -61,10 +61,20 @@ const Inicial = () => {
       <button className="mt-8 w-[311px] h-[67px] bg-[#6F4F28] text-white text-[28px] rounded-2xl">Quero meu desconto!</button>
    </div>
    </div>
-   <div className="h-[671px] w-screen flex items-center justify-center bg-[#EBCFAF] mb-5">
-      <div className="border border-[#6F4F28] w-[1178px] h-[671px] bg-[#E7DAD1] rounded-4xl flex flex-col  items-center space-y-10">
+   <div className="h-[754px] w-[1440px] flex items-center justify-center bg-[#EBCFAF] mb-5 mx-auto">
+      <div className="border border-[#6F4F28] w-[1178px] h-[671px] bg-[#E7DAD1] rounded-[68px] flex flex-col items-center justify-center space-y-10">
          <h1 className="text-[#6F4F28] text-[64px] font-[Imbue]">Nosso Cantinho no Mundo</h1>
-         <img src={google_maps} alt="" className="rounded-4xl"/>
+         <iframe 
+            width="982" 
+            height="533" 
+            frameBorder="0" 
+            style={{ border: 0, pointerEvents: 'none' }}
+            src="https://maps.google.com/maps?q=Avenida+Sapopemba+6094&output=embed&z=15&controls=0" 
+            allowFullScreen={false}
+            loading="lazy"
+            className="rounded-[107px]"
+         >
+         </iframe>
 
       </div>
    </div>
