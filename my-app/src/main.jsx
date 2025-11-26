@@ -1,14 +1,30 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from 'react-router'
 import './index.css'
 import App from './App.jsx'
 import Inicial from './pages/inicial.jsx'
 import TelaLogin from './pages/Login.fundo.jsx'
 import Menu from './pages/menu.jsx'
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Inicial/>
+
+  },
+  {
+    path: '/login',
+    element: <TelaLogin/>
+  },
+  {
+    path: '/menu',
+    element: <Menu/>
+  }
+])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Inicial/>
+    <RouterProvider router={router}/>
   </StrictMode>,
 )
