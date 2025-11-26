@@ -3,13 +3,8 @@ import fundo_menu from "../assets/fundo_menu.png"
 import croassan from "../assets/items/croassan.png"
 import pao_de_queijo from "../assets/items/pao_de_queijo.png"
 import torta_de_morango from "../assets/items/torta_de_morango.png"
-<<<<<<< HEAD
-import cafe from "../assets/items/doce.png"
-
-=======
 import cafe from "../assets/items/cafe.png"
 import { useNavigate } from "react-router-dom";
->>>>>>> 467de19bc9671020b900ccfa63c295e936a9d151
 
 
 const MenuSample = () => {
