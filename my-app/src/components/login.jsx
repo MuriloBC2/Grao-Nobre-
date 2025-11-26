@@ -1,57 +1,65 @@
 import React from "react";
-import './login.css'
+import './loginecadastro.css'
+import logo from "../assets/logo.png";
 import { CiLock } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 
-const Login = () => {
+const Login= () => {
 
 return (
 
 <>
-<div className="Loginda">
-    <h1 className="TituloLogin">Cadastro</h1>
 
-   <div className="input-group">
-  <CiUser size={20} className="icon-input" />
-  <input className="inlogin" type="text" placeholder="Nome completo..." />
-  </div>
- 
-  <div className="input-group">
-  <CiUser size={20} className="icon-input" />
-  <input className="inlogin" type="text" placeholder="Email ou Telefone..." />
-  </div>
+<div className="espacologin"> 
+    <div className="imagemfundoLog">
+<img src={logo} alt="" className="imagemfundoLog" />
 
+    </div> 
 
-  <div className="input-group">
-  <CiLock size={20} className="icon-password" />
-  <input className="inlogin" type="password" placeholder="Crie a senha"/>
-  </div>
+   <p className="titulologin">
+        Que bom ter você de volta!
+        <br />
+        O <span className="escrita">café já está pronto, falta só você!</span> 
+      </p>
 
-  <div className="input-group">
-  <CiLock size={20} className="icon-password" />
-  <input className="inlogin" type="password" placeholder="Confirme sua senha"/>
-  
+    
+    <label htmlFor="">login</label>
+     <div className="input-group">
+    <CiUser size={20} className="icon-input" />
+    <input className="inlogin" type="text" placeholder="Email ou Telefone..." />
+    </div>
+    
 
-    <div class="tem-cadastro">
-    Já tem cadastro? <span class="info-icon">ⓘ</span>
+    <label htmlFor="">senha</label>
+    <div className="input-group">
+    <CiLock size={20} className="icon-password" />
+    <input className="inlogin" type="password" placeholder="Crie a senha"/>
+      
+      
+      
+      <div class="tem-cadastro">
+    Esqueceu a senha? <span class="info-icon">ⓘ</span>
     </div>
 
-
-
-    </div>
-
-    <div className="Cadastrar">
-    <button class="Cadastrar">
-    Cadastrar
+   <div className="">
+    <button class="loginbotao">
+    Login
     </button>
    
+     <button class="loginbotao2">
+    Cadastrar
+    </button>
+
+
+
+
+
     </div>
 
-   
-
-
-
-
+      
+      
+      
+      </div>
     
 
 
@@ -60,20 +68,25 @@ return (
 
 
 
-</div>
 
 
 
 
-</>
+     </div> 
+
+    
+
+
+
+
+
+
+</> 
 
 
 
 )
 
-
-
-
 }
 
- export default Login;
+export default Login

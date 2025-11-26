@@ -1,6 +1,7 @@
 import React from "react";
-import Login from "../components/login.jsx";
+import Cadastro from "../components/cadastro.jsx";
 import logoComNome from "../assets/Logo_com_nome.png";
+import Login from "../components/login.jsx";
 
 const TelaLogin = () => {
  return (
@@ -9,16 +10,16 @@ const TelaLogin = () => {
 
 
 
+<div className="divtotalcadastro">
 
-
-<Login/>
 
 <div className="fundomarrom">
-<img src={logoComNome} alt="Logo_com_nome" />
+    <Login/>
+<img src={logoComNome} alt="Logo_com_nome" className="imagemfundo" />
  </div>
 
 
-
+</div>
 
 </>
 

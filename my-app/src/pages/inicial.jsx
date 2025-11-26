@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 import cafe_inicio from "../assets/cafe_inicio.png";
 import arte_fundo_inicial from "../assets/arte_fundo_inicio.png";
 import Navbar from "../components/navbar.jsx";
-import Login from "../components/login.jsx";
+import Login from "../components/cadastro.jsx";
 
 const Inicial = () => {
   return (
