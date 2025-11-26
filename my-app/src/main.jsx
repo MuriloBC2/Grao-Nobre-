@@ -6,6 +6,7 @@ import App from './App.jsx'
 import Inicial from './pages/inicial.jsx'
 import TelaLogin from './pages/Login.fundo.jsx'
 import Menu from './pages/menu.jsx'
+import Cesto from './pages/cesto.jsx'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: '/menu',
     element: <Menu/>
+  },
+  {
+    path: '/cesto',
+    element: <Cesto/>
   }
 ])
 
