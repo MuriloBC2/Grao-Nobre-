@@ -62,6 +62,16 @@ return (
 
     
     <label htmlFor="">Login</label>
+<<<<<<< HEAD
+=======
+     <div className="input-group">
+    <CiUser size={20} className="icon-input" />
+    <input className="inlogin" type="text" placeholder="Email ou Telefone..." />
+    </div>
+    
+
+    <label htmlFor="">Senha</label>
+>>>>>>> ecb0ede9f469c098e36ed914d8d33590c6888723
     <div className="input-group">
       <CiUser size={20} className="icon-input" />
       <input className="inlogin" type="text" placeholder="Email ou Telefone..." value={email} onChange={(e) => setEmail(e.target.value)}/>

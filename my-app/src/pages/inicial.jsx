@@ -18,6 +18,9 @@ const Inicial = () => {
    const handleNavigateTologin = () => {
       navigate('/login');
    }
+     const handleNavigateToCesto= () => {
+      navigate('/cesto');
+   }
 
    const handleNavigateToCesto = () => {
       navigate('/cesto');
@@ -79,7 +82,6 @@ const Inicial = () => {
             style={{ border: 0, pointerEvents: 'none' }}
             src="https://maps.google.com/maps?q=Avenida+Sapopemba+6094&output=embed&z=15&controls=0" 
             allowFullScreen={false}
-            loading="lazy"
             className="rounded-[107px]"
          >
          </iframe>

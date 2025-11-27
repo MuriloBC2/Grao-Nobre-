@@ -1,6 +1,6 @@
 .Loginda{
     width: 673px;
-    height: 100vh;
+    height: 100%;
     background-color: #E7DAD1;
     display: flex;
     flex-direction: column;
@@ -9,15 +9,13 @@
     border: 1px solid black;
     border-top-right-radius: 60px;
     border-bottom-right-radius: 60px;
-    
-    
 }
     
     
 .espacologin{
 
-  width: 673px;
-    height: 100vh;
+   width: 673px;
+    height: 100%;
     background-color: #E7DAD1;
     display: flex;
     flex-direction: column;
@@ -26,23 +24,6 @@
     border-top-right-radius: 60px;
     border-bottom-right-radius: 60px;
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 .TituloLogin {
@@ -64,16 +45,13 @@ height: 50px;
   font-size: 20px;
   color: #9b5c42;
   background-color:#E2E2E2;
- 
   padding: 5px; 
   padding-left: 45px; 
-  
   box-sizing: border-box; 
 }
 
 .input-group {
   position: relative; 
- 
   width: 398px; 
   height: 45px;
   margin: 5px auto; 
@@ -91,7 +69,6 @@ height: 50px;
 
 
 .Areabotao{
-
 display: flex;
 flex-direction: row;
 margin-top: 60px;
@@ -99,7 +76,6 @@ margin-top: 60px;
 }
 
 #botaovoltar {
-
 display: flex;
 align-items: center;
 justify-content: center;
@@ -110,26 +86,20 @@ border-radius: 8px;
 font-size: 20px;
 color: #9b5c42;
 margin-right: 14px;
-
-
 }
 
 
 .tem-cadastro {
-
  color: #9B5C42; 
  font-size: 16px;
  font-weight: 400;
  margin: 3px;
  margin-top: px;
  width: 200px;
-
-
 }
 
 
 .Cadastrar {
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,9 +110,7 @@ margin-right: 14px;
     border-radius: 10px;
     font-size: 20px;
     background-color: #9B5C42;
-    color: #FFFFFF;
-  
-    
+    color: #FFFFFF;   
 }
 
 .fundomarrom {
@@ -155,32 +123,22 @@ margin-right: 14px;
   align-items: center;
   flex-direction: row;
   height: 100vh;
-
-  
-
 }
         
 
 .imagemfundo {
 width: 800px;
 height: 600px;
-
-
-
-
 }
 
 .divtotalcadastro {
-
 display: flex;
 flex-direction: row;
-
-
+height: 100%;
 }
 
 
 .imagemfundoLog {
-  
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -191,11 +149,9 @@ flex-direction: row;
     align-items: center;
     margin-top: 3px;
     margin-bottom: 5px;
-
 }
 
 .titulologin {
-
   position: relative;
   width: 400px;
   border-radius: 8px;
@@ -206,7 +162,6 @@ flex-direction: row;
   line-height: 1.5;
   margin: 0;
   margin-bottom: 20px;
-
 }
 
 
@@ -229,7 +184,6 @@ label {
 
 
 .loginbotao {
-
  display: flex;
     align-items: center;
     justify-content: center;
@@ -241,11 +195,9 @@ label {
     background-color: #9B5C42;
     color: #FFFFFF;
     margin-top: 15px;
-
 }
 
 .loginbotao2 {
-
  display: flex;
     align-items: center;
     justify-content: center;
@@ -255,9 +207,7 @@ label {
     border-radius: 10px;
     font-size: 20px;
     background-color: #E2E2E2 ;
-    border: #9B5C42 2px solid
-;
+    border: #9B5C42 2px solid;
     color: #9B5C42;
     margin-top: 15px;
-
 }
