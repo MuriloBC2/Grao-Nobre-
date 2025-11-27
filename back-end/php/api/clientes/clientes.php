@@ -1,5 +1,10 @@
 <?php
 
+require 'vendor/autoload.php';
+
+use \Firebase\JWT\JWT;
+use \Firebase\JWT\Key;
+
 //cadastro de clientes
 if ($api == "clientes") {
         $pdo = DB::connect();
@@ -10,21 +15,19 @@ if ($api == "clientes") {
             
             $data = json_decode(file_get_contents("php://input"));
 
-           if (!isset($data->nome) || !isset($data->email) || !isset($data->senha) || !isset($data->telefone) || !isset($data->endereco) || !isset($data->cep)) {
+           if (!isset($data->nome) || !isset($data->email) || !isset($data->senha) || !isset($data->telefone)) {
                 echo json_encode(array("Erro" => "Dados incompletos para cadastro"));
                 exit;
             }
 
             $senhaCriptografia = password_hash($data->senha, PASSWORD_DEFAULT);
 
-            $sql = "INSERT INTO cliente (nome, email, senha, telefone, endereco, cep) VALUES (:nome, :email, :senha, :telefone, :endereco, :cep)";
+            $sql = "INSERT INTO cliente (nome, email, senha, telefone) VALUES (:nome, :email, :senha, :telefone)";
             $stmt = $pdo->prepare($sql);
             $stmt->bindParam(':nome', $data->nome);
             $stmt->bindParam(':email', $data->email);
             $stmt->bindParam(':senha', $senhaCriptografia);
             $stmt->bindParam(':telefone', $data->telefone);
-            $stmt->bindParam(':endereco', $data->endereco);
-            $stmt->bindParam(':cep', $data->cep);
             $stmt->execute();
             
             if ($stmt->rowCount() > 0) {
@@ -50,7 +53,26 @@ if ($api == "clientes") {
                 $obj = $rs->fetch(PDO::FETCH_OBJ);
 
                 if ($obj && password_verify($data->senha, $obj->senha)) {
-                    echo json_encode(array("Sucesso" => "Login bem-sucedido", "cliente" => $obj));
+
+                    $payload = [
+                        'id' => $obj->id,
+                        'email' => $obj->email,
+                        'nome' => $obj->nome,
+                        'telefone' => $obj->telefone,
+                        'iat' => time(),
+                        'exp' => time() + (60 * 60 * 24)
+                    ];
+
+                    $chave = "ablablablablablablabla";
+                    $jwt = JWT::encode($payload, $chave, 'HS256');
+
+                    echo json_encode([
+                        "sucesso" => "Login bem-sucedido",
+                        "token" => $jwt,
+                        "cliente" => $obj
+
+                    ]);
+
                 } else {
                     echo json_encode(array("Erro" => "Email ou senha inválidos"));
                 }

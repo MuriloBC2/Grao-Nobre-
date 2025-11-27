@@ -31,7 +31,7 @@ if ($api == "carrinho") {
 
         if($method == "GET") {
             if ($acao == "listar" && $param != "") {
-                $rs = $pdo->prepare("SELECT c.id, p.nome, p.preco, c.quantidade FROM carrinho c JOIN produto p ON c.produto_id = p.id WHERE c.cliente_id = :cliente_id");
+                $rs = $pdo->prepare("SELECT c.id, p.nome, p.preco, c.quantidade, p.imagem FROM carrinho c JOIN produto p ON c.produto_id = p.id WHERE c.cliente_id = :cliente_id");
                 $rs->execute(array(':cliente_id' => $param));
                 $obj = $rs->fetchAll(PDO::FETCH_OBJ);
 
