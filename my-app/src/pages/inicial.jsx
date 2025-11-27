@@ -15,6 +15,9 @@ import { useNavigate } from "react-router-dom";
 const Inicial = () => {
    const navigate = useNavigate();
 
+   const comoRef = React.useRef(null);
+   const endRef = React.useRef(null);
+
    const handleNavigateTologin = () => {
       navigate('/login');
    }
@@ -22,13 +25,17 @@ const Inicial = () => {
       navigate('/cesto');
    }
 
-   const handleNavigateToCesto = () => {
-      navigate('/cesto');
+   const handleClickCf = () => {
+      comoRef.current.scrollIntoView({ behavior: 'smooth' });
    }
 
-  return (
+   const handClickEnd = () => {
+      endRef.current.scrollIntoView({ behavior: 'smooth' });
+   }
+
+   return (
  <>
-    <Navbar/>
+    <Navbar onEndClick={handClickEnd} />
    <div  className="h-[850px] w-[[1,440px]]  flex justify-center items-center">
       <img src={arte_fundo_inicial} alt="Fundo" className="absolute  w-screen h-[970px] opacity-30 object-cover -z-40 "/>
       <div className="flex flex-col w-160 h-150  text-[#C0977D]  font-[jost] ml-20">
@@ -36,7 +43,7 @@ const Inicial = () => {
           <p className="text-[24px]">Com o <span className="text-[#6F4F28]">Minha Sacola</span>, você seleciona seus pães, cafés e doces favoritos e nosso motoqueiro leva o sabor até você em minutos</p>
           <div className=" mt-20 space-x-5">
              <button className="w-[255px] h-[64px]  bg-[#9B5C42] text-white text-[24px]" onClick={handleNavigateToCesto}>Minha Sacola</button>
-             <button className="w-[255px] h-[64px]  bg-[#C0977D] text-white text-[24px]">Como Funciona ?</button>
+             <button className="w-[255px] h-[64px]  bg-[#C0977D] text-white text-[24px]" onClick={handleClickCf}>Como Funciona ?</button>
           </div>
       </div>
       <div className="ml-10  mb-20">
@@ -44,7 +51,7 @@ const Inicial = () => {
       </div>
    </div>
 
-   <div className="h-[749px] w-screen flex justify-center items-center bg-[#A45434BD] flex-col">
+   <div className="h-[749px] w-screen flex justify-center items-center bg-[#A45434BD] flex-col" ref={comoRef}>
       <img src={arte_fundo_inicial} alt="Fundo" className="absolute  w-screen h-screen opacity-40 object-cover -z-40"/>
       <h1 className="text-[40px] text-white font-[jost] mt-20">3 Passos Simples Para Seu Café Perfeito</h1>
       <div className="flex flex-row mb-10">
@@ -72,14 +79,14 @@ const Inicial = () => {
       <button className="mt-8 w-[311px] h-[67px] bg-[#6F4F28] text-white text-[28px] rounded-2xl">Quero meu desconto!</button>
    </div>
    </div>
-   <div className="h-[754px] w-scree flex items-center justify-center bg-[#EBCFAF] mb-5 mx-auto">
+   <div className="h-[754px] w-scree flex items-center justify-center bg-[#EBCFAF] mb-5 mx-auto" ref={endRef}>
       <div className="border border-[#6F4F28] w-[1178px] h-[671px] bg-[#E7DAD1] rounded-[68px] flex flex-col items-center justify-center space-y-10">
          <h1 className="text-[#6F4F28] text-[64px] font-[Imbue]">Nosso Cantinho no Mundo</h1>
          <iframe 
             width="982" 
             height="533" 
             frameBorder="0" 
-            style={{ border: 0, pointerEvents: 'none' }}
+            style={{ border: 0 }}
             src="https://maps.google.com/maps?q=Avenida+Sapopemba+6094&output=embed&z=15&controls=0" 
             allowFullScreen={false}
             className="rounded-[107px]"

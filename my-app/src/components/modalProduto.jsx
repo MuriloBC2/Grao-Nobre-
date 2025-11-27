@@ -1,6 +1,12 @@
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
 const ModalProduto = ({ produto, fechar }) => {
+  const navigate = useNavigate();
+
+    const handleNavigateToCesto= () => {
+      navigate('/cesto');
+   }
 
   return (
 
@@ -25,7 +31,7 @@ const ModalProduto = ({ produto, fechar }) => {
             Adicionar a sacola 
         </button>
         <div className='flex flex-row justify-center gap-3'>
-        <button  className="w-[156px] h-[52px] bg-[#A67B5B] text-white rounded-2xl mb-2">Abrir sacola</button>
+        <button  className="w-[156px] h-[52px] bg-[#A67B5B] text-white rounded-2xl mb-2" onClick={handleNavigateToCesto} >Abrir sacola</button>
         <button  onClick={fechar} className="w-[156px] h-[52px] bg-[#E2E2E2] text-[#A67B5B] rounded-2xl p-1">Continar comprando</button>
         </div>
         </div>
