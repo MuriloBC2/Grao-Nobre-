@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import Inicial from './pages/inicial.jsx'
 import TelaLogin from './pages/Login.fundo.jsx'
+import TelaCadastro from './components/cadastro.jsx'
 import Menu from './pages/menu.jsx'
 import Cesto from './pages/cesto.jsx'
 
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: '/login',
     element: <TelaLogin/>
+  },
+  {
+    path: '/cadastro',
+    element: <TelaCadastro/>
   },
   {
     path: '/menu',

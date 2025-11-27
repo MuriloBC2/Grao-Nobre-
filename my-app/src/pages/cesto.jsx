@@ -5,9 +5,12 @@ import { useState, useEffect, use } from 'react';
 import { SlTrash } from "react-icons/sl";
 import { IoMdArrowBack } from "react-icons/io";
 import Resumo from '../components/resumo.jsx';
+import { useNavigate } from 'react-router-dom';
+
 
 const Cesto = () => {
 
+    const navigate = useNavigate();
     const [produtos, setProdutos] = useState([]);
     const [carrinho, setCarrinho] = useState([]);
 
